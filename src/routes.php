@@ -17,6 +17,7 @@ $app->get('/api/[{name}]', function ($req, $res, $args) {
     )->withJson($data);
 });
 
+
 $app->get('/[{name}]', function ($request, $response, $args) {
     // Sample log message
     $this->logger->info("Slim-Skeleton '/' route");

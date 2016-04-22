@@ -8,6 +8,9 @@
         <div class="row ajuste">
             <div class="top">
                 <div class="tit-top">AppGym</div>
+                <div class="cont-btn-login">
+                    <p style="margin:0;padding:0;"><i class="fa fa-user"></i> Bienvenido <?= htmlspecialchars($name); ?></p>
+                </div>
             </div>
         </div>
         <nav class="left-sidebar">
@@ -26,20 +29,22 @@
                 </li>
             </ul>
         </nav>
-        <h1>La Web de Chicho</h1>
-        <div>El poder esta en mi!</div>
-        <div>JAJA Locote</div>
-        <div>Botones del sistema me gustarian asi</div>
-        <div class="cont-btn1"><button class="btn1" style="">Ingresar</button></div>
-        <div>ó asi</div>
-        <div ><button style="border:none;color:white;border-radius:3px 3px 3px 3px;border:1px solid #2C8C92;font-size:16px;padding:10px 50px;background-color: #3AB0B8;">Ingresar</button></div>
-        <div>ó asi</div>
-        <div ><button style="font-weight:bold;border:none;color:white;font-size:16px;padding:18px 35px;background-color: #3AB0B8;">Ingresar</button></div>
-        <div>Quiero trabajar con medidas 'vh' en vez de 'px'</div>
-        <?php if (isset($name)) : ?>
-            <h2>Hello <?= htmlspecialchars($name); ?>!</h2>
-        <?php else: ?>
-            <p>Try <a href="/SlimFramework">/SlimFramework</a>
-        <?php endif; ?>
+        <div class="cont-content">
+            <h1>La Web de Chicho</h1>
+            <div>El poder esta en mi!</div>
+            <div>JAJA Locote</div>
+            <div>Botones del sistema me gustarian asi</div>
+            <div class="cont-btn1"><button class="btn1" style="">Ingresar</button></div>
+            <div>ó asi</div>
+            <div ><button style="border:none;color:white;border-radius:3px 3px 3px 3px;border:1px solid #2C8C92;font-size:16px;padding:10px 50px;background-color: #3AB0B8;">Ingresar</button></div>
+            <div>ó asi</div>
+            <div ><button style="font-weight:bold;border:none;color:white;font-size:16px;padding:18px 35px;background-color: #3AB0B8;">Ingresar</button></div>
+            <div>Quiero trabajar con medidas 'vh' en vez de 'px'</div>
+            <?php if (isset($name)) : ?>
+                <h2>Hello <?= htmlspecialchars($name); ?>!</h2>
+            <?php else: ?>
+                <p>Try <a href="/SlimFramework">/SlimFramework</a>
+            <?php endif; ?>
+        </div>
     </body>
 </html>
